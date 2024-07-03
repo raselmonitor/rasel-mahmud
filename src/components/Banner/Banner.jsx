@@ -72,7 +72,7 @@ const Banner = () => {
                     density: {
                         enable: true,
                     },
-                    value: 150,
+                    value: 120,
                 },
                 opacity: {
                     value: 0.5,
