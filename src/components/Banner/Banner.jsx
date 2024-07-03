@@ -24,7 +24,7 @@ const Banner = () => {
     const options = useMemo(
         () => ({
 
-            style: { height: "68vh", position: "absolute", width: "100%", overflow: 'hidden' },
+            style: { height: "76vh", position: "absolute", width: "100%", overflow: 'hidden' },
             fpsLimit: 120,
             interactivity: {
                 events: {
@@ -112,7 +112,7 @@ const Banner = () => {
                     options={options}
                 />
             </div>
-            <div className="h-[68vh] flex flex-col gap-10 justify-center bg-[#222222] items-center">
+            <div className="h-[76vh] flex flex-col gap-10 justify-center bg-[#222222] items-center">
                 <h1 className="uppercase font-bold bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text animate-gradient font-mont text-2xl md:text-5xl lg:text-7xl z-10 ">
                     Rasel Mahmud
                 </h1>

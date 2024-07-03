@@ -10,7 +10,7 @@ const Navbar = () => {
         </NavLink>
         <NavLink
             className={({ isActive }) => isActive ? 'border-b-2 border-orange-500 pb-1 font-semibold' : ''}
-            to='/a'
+            to='/about'
         ><li>About</li>
         </NavLink>
         <NavLink
