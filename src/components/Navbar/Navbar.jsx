@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -12,7 +12,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className="navbar md:px-28  fixed bg-[#222222] text-orange-600 pt-2">
+            <div className="navbar md:px-28  lg:fixed bg-[#222222] text-orange-600 pt-2">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -36,7 +36,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <Link to='/'>
-                        <div className=" flex items-center gap-7 text-xl font-mont font-semibold">
+                        <div className=" hidden md:flex items-center gap-7 text-xl font-mont font-semibold">
                             <img
                                 className="w-12 h-12 rounded-full "
                                 alt="Tailwind CSS Navbar component"
@@ -46,11 +46,20 @@ const Navbar = () => {
                     </Link>
                 </div>
 
-                <div className="navbar-end hidden lg:flex">
-                    <ul className="menu menu-horizontal space-x-4 text-[16px] font-mont uppercase font-semibold">
+                <div className="navbar-end ">
+                    <ul className="menu menu-horizontal hidden lg:flex space-x-4 text-[16px] font-mont uppercase font-semibold">
                         {navLinks}
                     </ul>
                 </div>
+                <Link to='/'>
+                    <div className=" lg:hidden flex items-center gap-7 text-xl font-mont font-semibold">
+                        <img
+                            className="w-12 h-12 rounded-full "
+                            alt="Tailwind CSS Navbar component"
+                            src="/Rasel.jpg" />
+                        
+                    </div>
+                </Link>
             </div>
         </div>
     );
