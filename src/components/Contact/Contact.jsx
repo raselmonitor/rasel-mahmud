@@ -4,13 +4,31 @@ import { FiSend } from "react-icons/fi";
 import { MdOutlineEmail, MdOutlineLocationOn } from "react-icons/md";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-
+import emailjs from '@emailjs/browser';
+import { useRef } from "react";
 const Contact = () => {
+    const form = useRef();
+   
+   
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        toast.success('Message send successful')
-    }
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs
+          .sendForm('service_bfpmymh', 'template_z046g4b', form.current, {
+            publicKey: 'gu2o1WlvA_hli9BAk',
+          })
+          .then(
+            () => {
+              console.log('SUCCESS!');
+              toast.success('Message Sent Successfully')
+              e.target.reset()
+            },
+            (error) => {
+              console.log('FAILED...', error.text);
+            },
+          );
+      };
 
     return (
         <div className="w-11/12 lg:w-10/12 mx-auto mb-28" id="contact">
@@ -25,12 +43,12 @@ const Contact = () => {
                 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="20"
                 className="lg:col-span-3 p-7 rounded-lg shadow-md border">
                     <h3 className="text-2xl font-mont font-bold text-[#263170]">Send Message</h3>
-                    <form onSubmit={handleSubmit}>
+                    <form ref={form} onSubmit={sendEmail}>
                         <div className="grid grid-cols-1 gap-4 mt-4 sm:grid-cols-2 font-mont text-lg">
                             <div>
                                 <label className="text-gray-700 dark:text-gray-200" htmlFor="username">Your Name</label>
                                 <input id="username" type="text"
-                                    name="name"
+                                    name="from_name"
                                     required
                                     placeholder="type your full name"
                                     className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" />
@@ -38,25 +56,9 @@ const Contact = () => {
                             <div>
                                 <label className="text-gray-700 dark:text-gray-200" htmlFor="emailAddress">Email Address</label>
                                 <input id="emailAddress" type="email"
-                                    name="email"
+                                    name="from_email"
                                     required
                                     placeholder="type your email address"
-                                    className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" />
-                            </div>
-                            <div>
-                                <label className="text-gray-700 dark:text-gray-200" htmlFor="password">Your Number</label>
-                                <input id="number" type="number"
-                                    name="number"
-                                    required
-                                    placeholder="type your phone number"
-                                    className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" />
-                            </div>
-                            <div>
-                                <label className="text-gray-700 dark:text-gray-200" htmlFor="passwordConfirmation">Contact Subject</label>
-                                <input id="passwordConfirmation" type="text"
-                                    name="subject"
-                                    required
-                                    placeholder="type your your subject"
                                     className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" />
                             </div>
                         </div>
