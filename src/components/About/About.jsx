@@ -2,7 +2,7 @@ import { IoMdDownload } from "react-icons/io";
 
 const About = () => {
     return (
-        <div className="w-11/12 md:w-10/12 mx-auto my-28 grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="w-11/12 md:w-10/12 mx-auto my-28 grid grid-cols-1 md:grid-cols-3 gap-10" id="about">
             <div>
                 <div className="border-b-8 border-r-8 border-[#263170] rounded-3xl shadow-lg">
                     <img
