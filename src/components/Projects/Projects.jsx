@@ -2,13 +2,17 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 const Projects = () => {
     return (
-        <div className="w-11/12 md:w-10/12 mx-auto mb-28">
-            <div className="flex justify-center items-center flex-col">
+        <div className="w-11/12 md:w-10/12 mx-auto mb-28" id="project">
+            <div
+            data-aos="fade-up" data-aos-duration="1000" data-aos-delay="20"
+            className="flex justify-center items-center flex-col ">
                 <h3 className="text-3xl font-bold italic font-mont text-[#263170]  ">My Projects</h3>
                 <div className="md:w-24 w-16 h-1 bg-[#263170] md:mt-2 mt-1"></div>
             </div>
             {/* BSM */}
-            <div className=" shadow-md border-b-8 border-r-8 rounded-2xl border-[#263170] mt-10 hover:scale-105 hover:border-[#03A9F4]">
+            <div 
+            data-aos="fade-down" data-aos-duration="1000" data-aos-delay="20"
+            className=" shadow-md border-b-8 border-r-8 rounded-2xl border-[#263170] mt-10 hover:scale-105 hover:border-[#03A9F4]">
                 <div className="p-7 grid grid-cols-1 md:grid-cols-2 gap-5 shadow-xl border rounded-xl ">
                     <a href="https://assignment-twelve-1044b.web.app" target="_blank">
                         <img
@@ -36,7 +40,9 @@ const Projects = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 {/* blog site */}
-                <div className=" shadow-md border-t-8 border-l-8 rounded-2xl border-[#263170] mt-10 hover:scale-105 hover:border-[#03A9F4]">
+                <div 
+                data-aos="fade-right" data-aos-duration="1000" data-aos-delay="20"
+                className=" shadow-md border-t-8 border-l-8 rounded-2xl border-[#263170] mt-10 hover:scale-105 hover:border-[#03A9F4]">
                     <div className="p-7  shadow-xl border rounded-xl ">
                         <a href="https://assignment-eleven-74640.web.app" target="_blank">
                             <img
@@ -62,7 +68,9 @@ const Projects = () => {
                     </div>
                 </div>
                 {/* tourism */}
-                <div className=" shadow-md border-b-8 border-r-8 rounded-2xl border-[#263170] mt-10 hover:scale-105 hover:border-[#03A9F4]">
+                <div 
+                data-aos="fade-left" data-aos-duration="1000" data-aos-delay="20"
+                className=" shadow-md border-b-8 border-r-8 rounded-2xl border-[#263170] mt-10 hover:scale-105 hover:border-[#03A9F4]">
                     <div className="p-7  shadow-xl border rounded-xl ">
                         <a href="https://nr-tourism.web.app" target="_blank">
                             <img

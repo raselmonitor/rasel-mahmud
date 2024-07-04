@@ -13,13 +13,17 @@ const Contact = () => {
     }
 
     return (
-        <div className="w-11/12 lg:w-10/12 mx-auto mb-28">
-            <div className="flex justify-center items-center flex-col">
+        <div className="w-11/12 lg:w-10/12 mx-auto mb-28" id="contact">
+            <div 
+            data-aos="fade-down" data-aos-duration="1000" data-aos-delay="20"
+            className="flex justify-center items-center flex-col">
                 <h3 className="text-3xl font-bold italic font-mont text-[#263170]  ">Contact Me</h3>
                 <div className="md:w-24 w-16 h-1 bg-[#263170] md:mt-2 mt-1"></div>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-7 mt-10">
-                <div className="lg:col-span-3 p-7 rounded-lg shadow-md border">
+                <div 
+                data-aos="fade-right" data-aos-duration="1000" data-aos-delay="20"
+                className="lg:col-span-3 p-7 rounded-lg shadow-md border">
                     <h3 className="text-2xl font-mont font-bold text-[#263170]">Send Message</h3>
                     <form onSubmit={handleSubmit}>
                         <div className="grid grid-cols-1 gap-4 mt-4 sm:grid-cols-2 font-mont text-lg">
@@ -71,7 +75,9 @@ const Contact = () => {
 
                 </div>
                 {/* description */}
-                <div className="rounded-lg shadow-md border p-7 lg:col-span-2">
+                <div 
+                data-aos="fade-left" data-aos-duration="1000" data-aos-delay="20"
+                className="rounded-lg shadow-md border p-7 lg:col-span-2">
                     <div className="font-mont">
                         <h3 className="text-2xl font-mont font-bold text-[#263170]">Get In Touch</h3>
                         <div className="md:text-xl font-semibold space-y-3 mt-10">

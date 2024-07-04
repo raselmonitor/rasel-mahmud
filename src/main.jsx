@@ -8,6 +8,9 @@ import {
 import MainLayout from './layout/MainLayout';
 import Home from './page/Home/Home';
 import About from './components/About/About';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 
 const router = createBrowserRouter([
   {

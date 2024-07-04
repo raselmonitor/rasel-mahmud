@@ -104,7 +104,7 @@ const Banner = () => {
 
 
     return (
-        <div >
+        <div  className="">
             <div className="">
                 <Particles
                     id="tsparticles"

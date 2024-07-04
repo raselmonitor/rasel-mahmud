@@ -1,16 +1,18 @@
 import { IoMdDownload } from "react-icons/io";
-
+import Resume from '/rasel.pdf';
 const About = () => {
     return (
         <div className="w-11/12 md:w-10/12 mx-auto my-28 grid grid-cols-1 md:grid-cols-3 gap-10" id="about">
-            <div>
+            <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="20">
                 <div className="border-b-8 border-r-8 border-[#263170] rounded-3xl shadow-lg">
                     <img
                         className="rounded-2xl z-30"
                         src="/profile.jpg" alt="" />
                 </div>
             </div>
-            <div className="md:col-span-2 shadow-md p-6 rounded-lg">
+            <div 
+            data-aos="fade-down" data-aos-duration="1000" data-aos-delay="20"
+            data-aso className="md:col-span-2 shadow-md p-6 rounded-lg">
                 <div>
                     <h3 className="text-3xl font-bold italic font-mont text-[#263170]  ">About Me</h3>
                     <div className="md:w-24 w-16 h-1 bg-[#263170] md:mt-2 mt-1"></div>
@@ -57,7 +59,9 @@ const About = () => {
                 </div>
                 {/* CV section */}
                 <div className="mt-10">
-                    <button className="btn bg-[#263170] text-white font-mont text-lg font-medium hover:bg-[#03A9F4]">Resume <IoMdDownload /></button>
+                    <a href={Resume} download='Resume'>
+                        <button className="btn bg-[#263170] text-white font-mont text-lg font-medium hover:bg-[#03A9F4]">Resume <IoMdDownload /></button>
+                    </a>
                 </div>
             </div>
         </div>

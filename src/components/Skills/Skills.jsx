@@ -2,8 +2,10 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Skills = () => {
     return (
-        <div className="w-11/12 md:w-10/12 mx-auto mb-28 flex flex-col md:flex-row justify-between gap-16">
-            <div className="shadow-md rounded-lg p-6">
+        <div className="w-11/12 md:w-10/12 mx-auto  mb-28 flex flex-col md:flex-row justify-between gap-16" id="skills">
+            <div 
+            data-aos="fade-down" data-aos-duration="1000" data-aos-delay="20"
+            className="shadow-md rounded-lg p-6" >
                 <div className="flex justify-center items-center flex-col">
                     <h3 className="text-3xl font-bold italic font-mont text-[#263170]  ">My Skills</h3>
                     <div className="md:w-24 w-16 h-1 bg-[#263170] md:mt-2 mt-1"></div>
@@ -44,7 +46,9 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
-            <div className="shadow-md rounded-lg p-6">
+            <div 
+            data-aos="fade-up" data-aos-duration="1000" data-aos-delay="20"
+            className="shadow-md rounded-lg p-6">
                 <div>
                     <h3 className="text-3xl font-bold italic font-mont text-[#263170]  ">My Experience In Other Fields</h3>
                     <div className="md:w-24 w-16 h-1 bg-[#263170] md:mt-2 mt-1"></div>

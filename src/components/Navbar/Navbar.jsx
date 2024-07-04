@@ -3,36 +3,16 @@ import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
 
     const navLinks = <>
-        <NavLink
-            className={({ isActive }) => isActive ? 'border-b-2 border-orange-500 pb-1 font-semibold' : ''}
-            to='/'
-        ><li>Home</li>
-        </NavLink>
-        <NavLink
-            className={({ isActive }) => isActive ? 'border-b-2 border-orange-500 pb-1 font-semibold' : ''}
-            to='/about'
-        ><li>About</li>
-        </NavLink>
-        <NavLink
-            className={({ isActive }) => isActive ? 'border-b-2 border-orange-500 pb-1 font-semibold' : ''}
-            to='/s'
-        ><li>Skills</li>
-        </NavLink>
-        <NavLink
-            className={({ isActive }) => isActive ? 'border-b-2 border-orange-500 pb-1 font-semibold' : ''}
-            to='/p'
-        ><li>Projects</li>
-        </NavLink>
-        <NavLink
-            className={({ isActive }) => isActive ? 'border-b-2 border-orange-500 pb-1 font-semibold' : ''}
-            to='/c'
-        ><li>Contact</li>
-        </NavLink>
+        <li><a href="/">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
     </>
 
     return (
         <div>
-            <div className="navbar bg-base-100 md:px-28 shadow-md fixed bg-opacity-0 text-orange-600 pt-5">
+            <div className="navbar md:px-28  fixed bg-[#222222] text-orange-600 pt-2">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -61,13 +41,13 @@ const Navbar = () => {
                                 className="w-12 h-12 rounded-full "
                                 alt="Tailwind CSS Navbar component"
                                 src="/Rasel.jpg" />
-                                <h4>Rasel Mahmud</h4>
+                            <h4>Rasel Mahmud</h4>
                         </div>
                     </Link>
                 </div>
 
                 <div className="navbar-end hidden lg:flex">
-                    <ul className="menu menu-horizontal space-x-12 text-[16px] font-mont uppercase font-semibold">
+                    <ul className="menu menu-horizontal space-x-4 text-[16px] font-mont uppercase font-semibold">
                         {navLinks}
                     </ul>
                 </div>
