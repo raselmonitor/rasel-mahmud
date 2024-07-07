@@ -31,7 +31,7 @@ const Contact = () => {
       };
 
     return (
-        <div className="w-11/12 lg:w-10/12 mx-auto mb-28" id="contact">
+        <div className="w-11/12 lg:max-w-6xl mx-auto mb-28" id="contact">
             <div 
             data-aos="fade-down" data-aos-duration="1000" data-aos-delay="20"
             className="flex justify-center items-center flex-col">
@@ -40,7 +40,7 @@ const Contact = () => {
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-7 mt-10">
                 <div 
-                data-aos="fade-right" data-aos-duration="1000" data-aos-delay="20"
+                data-aos="fade-up" data-aos-duration="1000" data-aos-delay="20"
                 className="lg:col-span-3 p-7 rounded-lg shadow-md border">
                     <h3 className="text-2xl font-mont font-bold text-[#263170]">Send Message</h3>
                     <form ref={form} onSubmit={sendEmail}>
@@ -78,7 +78,7 @@ const Contact = () => {
                 </div>
                 {/* description */}
                 <div 
-                data-aos="fade-left" data-aos-duration="1000" data-aos-delay="20"
+                data-aos="fade-down" data-aos-duration="1000" data-aos-delay="20"
                 className="rounded-lg shadow-md border p-7 lg:col-span-2">
                     <div className="font-mont">
                         <h3 className="text-2xl font-mont font-bold text-[#263170]">Get In Touch</h3>

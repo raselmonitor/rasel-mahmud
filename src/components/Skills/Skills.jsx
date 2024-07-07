@@ -2,7 +2,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Skills = () => {
     return (
-        <div className="w-11/12 md:w-10/12 mx-auto  mb-28 flex flex-col md:flex-row justify-between gap-16" id="skills">
+        <div className="w-11/12 lg:max-w-6xl mx-auto mb-28 flex flex-col md:flex-row justify-between gap-16" id="skills">
             <div 
             data-aos="fade-down" data-aos-duration="1000" data-aos-delay="20"
             className="shadow-md rounded-lg p-6" >

@@ -2,17 +2,17 @@ import { IoMdDownload } from "react-icons/io";
 import Resume from '/rasel.pdf';
 const About = () => {
     return (
-        <div className="w-11/12 md:w-10/12 mx-auto my-28 grid grid-cols-1 md:grid-cols-3 gap-10" id="about">
+        <div className="w-11/12 lg:max-w-6xl mx-auto my-28 grid grid-cols-1 md:grid-cols-3 gap-10" id="about">
             <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="20">
-                <div className="border-b-8 border-r-8 border-[#263170] rounded-3xl shadow-lg">
+                <div className="border-b-8 border-r-8 border-[#263170] rounded-3xl lg:h-full lg:w-full shadow-lg">
                     <img
-                        className="rounded-2xl z-30"
+                        className="rounded-2xl z-30 lg:h-full lg:w-full object-cover object-center"
                         src="/profile.jpg" alt="" />
                 </div>
             </div>
-            <div 
-            data-aos="fade-down" data-aos-duration="1000" data-aos-delay="20"
-            data-aso className="md:col-span-2 shadow-md p-6 rounded-lg">
+            <div
+                data-aos="fade-down" data-aos-duration="1000" data-aos-delay="20"
+                data-aso className="md:col-span-2 shadow-md p-6 rounded-lg">
                 <div>
                     <h3 className="text-3xl font-bold italic font-mont text-[#263170]  ">About Me</h3>
                     <div className="md:w-24 w-16 h-1 bg-[#263170] md:mt-2 mt-1"></div>
