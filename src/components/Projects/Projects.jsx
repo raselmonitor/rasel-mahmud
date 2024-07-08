@@ -2,7 +2,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 const Projects = () => {
     return (
-        <div className="w-11/12 lg:max-w-6xl mx-auto mb-28" id="project">
+        <div className="w-11/12 lg:container lg:px-16 mx-auto pt-28" id="project">
             <div
             data-aos="fade-up" data-aos-duration="1000" data-aos-delay="20"
             className="flex justify-center items-center flex-col ">
